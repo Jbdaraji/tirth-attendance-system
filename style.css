@@ -1,0 +1,295 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("IMAGES/bg.jpg");
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 65vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    height: 60px;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    color: white;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 23px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero>:first-child {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.hero>:nth-child(2),
+.hero :nth-child(3) {
+    font-size: 18px;
+}
+
+.seperator {
+    height: 7px;
+    background-color: rgb(42, 41, 41);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.213);
+    border: 1px solid rgba(255, 255, 255, 0.315);
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+}
+
+input {
+    padding: 12px 59px 8PX 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(23, 23, 23, 0.9);
+    border: 2px solid #625c5c;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.first {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 70vw;
+    padding: 34px 0px;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 422px;
+    position: relative;
+    z-index: 1;
+}
+
+.secimg video {
+    position: absolute;
+    top: 52px;
+    right: 14px;
+    width: 353px;
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-size: 20px;
+}
+
+.faq>:first-child {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq-box:hover {
+    background-color: rgb(109, 107, 107);
+}
+
+.faq-box svg {
+    filter: invert(1);
+}
+
+.faq-box {
+    transition: all 1s ease-in-out;
+    background-color: rgb(64, 62, 62);
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 34px auto;
+    padding: 12px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.faq .hero span {
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+    font-size: 14px;
+}
+
+footer .que {
+    padding: 34px 0;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1210px) {
+    nav {
+        max-width: 95vw;
+    }
+
+    .first {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        max-width: 70vw;
+        padding: 34px 0px;
+        flex-wrap: wrap;
+    }
+
+    .secimg video {
+        position: absolute;
+        top: 42px;
+        right: 26px;
+        width: 237px;
+    }
+
+    .secimg img {
+        width: 288px;
+        position: relative;
+        z-index: 1;
+        padding: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero>:first-child {
+        font-weight: bolder;
+        font-size: 30px;
+    }
+
+    .hero>:nth-child(2),
+    .hero>:nth-child(3) {
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+    }
+
+    .first>div :nth-child(1) {
+        font-size: 34px;
+        font-weight: bolder;
+    }
+
+    .faq>:first-child {
+        color: white;
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .faq-box {
+        transition: all 1s ease-in-out;
+        background-color: rgb(64, 62, 62);
+        max-width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        margin: 34px auto;
+        padding: 12px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+}
